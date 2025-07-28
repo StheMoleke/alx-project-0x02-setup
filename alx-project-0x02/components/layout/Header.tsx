@@ -1,11 +1,19 @@
-// components/layout/Header.tsx
-
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header>
-      <h1>Welcome to My Next.js App</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link href="/home">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };
