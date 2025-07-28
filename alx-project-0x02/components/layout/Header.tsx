@@ -1,21 +1,16 @@
-import React from "react";
-import Link from "next/link";
+// components/layout/Header.tsx
+import Link from 'next/link';
+import React from 'react';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/home">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav className="bg-gray-100 p-4 flex gap-4 shadow">
+      <Link href="/home">Home</Link>
+      <Link href="/about">About</Link>
+      <Link href="/posts">Posts</Link>
+    </nav>
   );
 };
 
 export default Header;
+
