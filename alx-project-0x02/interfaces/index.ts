@@ -1,7 +1,9 @@
 // interfaces/index.ts
-export interface CardProps {
+export interface PostProps {
+  id: number;
   title: string;
   content: string;
+  userId: number;
 }
 
 export interface ButtonProps {
