@@ -1,14 +1,15 @@
-import React from "react";
-import { type CardProps } from "@/interfaces";
+// components/common/Card.tsx
+
+import React from 'react';
+import { type CardProps } from '@/interfaces';
 
 const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
-    <div style={{ border: "1px solid #ddd", padding: "1rem", borderRadius: "8px", marginBottom: "1rem" }}>
-      <h2>{title}</h2>
+    <div className="border p-4 rounded shadow-md">
+      <h2 className="text-lg font-bold">{title}</h2>
       <p>{content}</p>
     </div>
   );
 };
 
 export default Card;
-
