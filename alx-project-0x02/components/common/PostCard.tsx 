@@ -1,0 +1,17 @@
+// components/common/PostCard.tsx
+import React from 'react';
+import { PostProps } from '../../interfaces';
+
+const PostCard: React.FC<Pick<PostProps, 'title' | 'body' | 'userId'>> = ({ title, body, userId }) => {
+  return (
+    <div className="border p-4 rounded shadow">
+      <h2 className="text-xl font-semibold">{title}</h2>
+      <p className="text-gray-700">{body}</p>
+      <p className="text-sm text-gray-500">User ID: {userId}</p>
+    </div>
+  );
+};
+
+export default PostCard;
+
+
