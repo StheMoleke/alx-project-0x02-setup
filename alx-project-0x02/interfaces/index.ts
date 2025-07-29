@@ -1,8 +1,7 @@
-// interfaces/index.ts
 export interface PostProps {
   id: number;
   title: string;
-  body: string;
+  content: string; // ✅ This is correct
   userId: number;
 }
 
